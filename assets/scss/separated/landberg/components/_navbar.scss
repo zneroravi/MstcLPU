@@ -1,0 +1,330 @@
+//
+// navbar.scss
+// Extended from Bootstrap
+//
+
+
+// Navbar
+
+.navbar {
+  transition: $transition-base;
+  transition-property: background-color, color, box-shadow, transform;
+  z-index: $zindex-fixed;
+
+  &.fixed-top {
+    backface-visibility: hidden;
+  }
+}
+
+.site-navbar.site-navbar-transparent {
+
+  &:not(.scrolled):not(.navbar-toggled-show),
+  &.scrolled-0:not(.navbar-toggled-show) {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+
+// Alternative navbar
+
+.site-navbar-alternative .navbar-collapse {
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+body:not(.flyer-animated) .site-navbar-alternative.site-navbar-transparent {
+
+  &:not(.scrolled):not(.navbar-toggled-show),
+  &.scrolled-0:not(.navbar-toggled-show) {
+
+    .navbar-brand,
+    .navbar-collapse,
+    .navbar-toggler,
+    .navbar-toggler-alternative {
+      background: transparent !important;
+      box-shadow: none !important;
+    }  
+  }
+}
+
+@include media-breakpoint-down(md) {
+.site-navbar-alternative.site-navbar-transparent {
+
+  &:not(.scrolled):not(.navbar-toggled-show),
+  &.scrolled-0:not(.navbar-toggled-show) {
+
+    .navbar-brand,
+    .navbar-collapse,
+    .navbar-toggler,
+    .navbar-toggler-alternative {
+      background: transparent !important;
+      box-shadow: none !important;
+    }  
+  }
+}
+}
+
+
+// Brand
+
+.navbar-brand {
+  font-weight: $navbar-brand-font-weight;
+  transition: all 0.35s ease-out;
+
+  .navbar-brand-text,
+  .navbar-brand-img {
+    transition: all 0.15s ease-out;
+  }
+}
+
+.navbar-brand-img {
+  max-height: $navbar-brand-height;
+  width: auto;
+}
+
+.navbar-light {
+
+  .navbar-brand {
+
+    .navbar-brand-img-light {
+      display: none;
+    }
+  }
+}
+
+.navbar-dark {
+
+  .navbar-brand {
+
+    .navbar-brand-text,
+    .navbar-brand-img:not(.navbar-brand-img-light):not(.navbar-brand-img-dark) {
+      filter: brightness(0) invert(1);
+    }
+
+    .navbar-brand-img-dark {
+      display: none;
+    }
+  }
+}
+
+
+// Toggler
+
+.navbar-toggler-alternative {
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  border: 0 solid transparent;
+  border-radius: 0;
+  transition: all 0.35s ease-out;
+
+  @include hover-focus() {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.navbar-toggler-alternative-icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler-alternative-icon > span {
+  position: relative;
+  width: 26px;
+  margin: 0 auto;
+  background-color: $navbar-dark-color;
+  transition: background-color .35s .0s ease-out;
+}
+
+.navbar-toggler-alternative-icon > span,
+.navbar-toggler-alternative-icon > span:before,
+.navbar-toggler-alternative-icon > span:after {
+  display: block;
+  height: 2px;
+  background-clip: padding-box;
+}
+
+.navbar-toggler-alternative-icon > span:before,
+.navbar-toggler-alternative-icon > span:after {
+  position: absolute;
+  content: '';
+  width: 13px;
+  background-color: $navbar-dark-color;
+  transform-origin: 50% 50%;
+  transition: background-color .35s .0s ease-out, top .2s .4s ease-out, left .2s .2s ease-out, right .2s .2s ease-out, width .2s .2s ease-out, transform .2s ease-out;
+}
+
+.navbar-toggler-alternative-icon > span:before {
+  top: 8px;
+  left: 13px;
+}
+
+.navbar-toggler-alternative-icon > span:after {
+  top: -8px;
+  right: 13px;
+}
+
+.navbar-toggler-alternative[aria-expanded="true"] .navbar-toggler-alternative-icon > span {
+  background-color: transparent !important;
+  transition: background-color .35s 0s ease-out;
+}
+
+.navbar-toggler-alternative[aria-expanded="true"] .navbar-toggler-alternative-icon > span:before,
+.navbar-toggler-alternative[aria-expanded="true"] .navbar-toggler-alternative-icon > span:after {
+  top: 0;
+  width: 26px;
+  transition: top .2s ease-out, left .2s .2s ease-out, right .2s .2s ease-out, width .2s .2s ease-out, transform .2s .4s ease-out;
+}
+
+.navbar-toggler-alternative[aria-expanded="true"] .navbar-toggler-alternative-icon > span:before {
+  left: 0;
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.navbar-toggler-alternative[aria-expanded="true"] .navbar-toggler-alternative-icon > span:after {
+  right: 0;
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.navbar-light {
+
+  .navbar-toggler-alternative-icon > span {
+    background-color: $navbar-light-color;
+  }
+
+  .navbar-toggler-alternative-icon > span:before,
+  .navbar-toggler-alternative-icon > span:after {
+    background-color: $navbar-light-color;
+  }
+}
+
+.navbar-dark {
+
+  .navbar-toggler-alternative-icon > span {
+    background-color: $navbar-dark-color;
+  }
+
+  .navbar-toggler-alternative-icon > span:before,
+  .navbar-toggler-alternative-icon > span:after {
+    background-color: $navbar-dark-color;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+
+        .navbar-toggler-alternative {
+          display: none;
+        }
+
+        .navbar-collapse-inner {
+          align-items: center;
+          display: flex;
+          flex-basis: auto;
+        }
+
+      }
+    }
+  }
+}
+
+
+// Collapse
+
+.navbar {
+
+  @include media-breakpoint-down(md) {
+    &.fixed-top {
+      .navbar-collapse.collapse.show {
+        max-height: 75vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  transition: all 0.35s ease-out;
+}
+
+
+// Button
+
+.navbar-btn {
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+// Navigation
+
+.navbar-nav {
+
+  .nav-item + .nav-item {
+
+    @include media-breakpoint-down(md) {
+	  padding-top: .25rem;
+	  padding-bottom: .25rem;
+    }
+  }
+
+  .nav-link {
+    font-weight: $navbar-nav-link-font-weight;
+
+    @include hover-focus {
+      outline: none;
+    }
+  }
+
+  .active > .nav-link,
+  .nav-link.active {
+    position: relative;
+  }
+
+  .active > .nav-link:before,
+  .nav-link.active:before {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: .25rem;
+    left: $navbar-nav-link-padding-x;
+    right: $navbar-nav-link-padding-x;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+
+        .navbar-nav .active > .nav-link:before,
+        .navbar-nav .nav-link.active:before {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+//
+// flyer.scss
+// Theme component
+//
+
+.intro-content {
+  position: relative;
+}
+
+.flyer {
+  position: relative;
+  z-index: 200;
+  backface-visibility: hidden;
+}
+
+.flyer-inner {
+  position: relative;
+}
+
+.flyer-content {
+  position: relative;
+  width: auto;
+  background-color: #fff;
+}
+
+.flyer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  transition: opacity .7s ease-out;
+  backface-visibility: hidden;
+  user-select: none;
+}
+
+.flyer-backdrop:not(.show) {
+  opacity: 0;
+}
+
+.btn-close-flyer {
+  position: fixed;
+  right: 0;
+  z-index: $zindex-fixed;
+  animation-name: fadeInRightBig;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.btn-close-flyer:not(.show) {
+  animation-name: fadeOutRightBig;
+}
+
+@include media-breakpoint-up(xl) {
+
+  body.flyer-open {
+    overflow: hidden;
+  }
+
+  .intro-content-inner {
+    position: relative;
+  }
+
+  .flyer {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    transition: opacity .7s ease-out;
+  }
+
+  .flyer:not(.show) {
+    opacity: 0;
+  }
+
+  .flyer-inner {
+	height: 100%;
+	padding-top: 9rem;
+	padding-bottom: 4rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+  }
+
+  .flyer-content {
+	max-width: $flyer-inner-lg;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	pointer-events: auto;
+    transform: translate(0,100vh);
+	transition: transform .7s ease-out;
+	border-radius: $flyer-border-radius;
+  }
+
+  .flyer.show .flyer-content {
+    transform: none;
+  }
+
+  // Scale up the Flyer
+  .flyer-content-sm {
+    max-width: $flyer-inner-sm;
+  }
+
+  .flyer-content-md {
+    max-width: $flyer-inner-md;
+  }
+
+  .flyer-content-lg {
+    max-width: $flyer-inner-lg;
+  }
+
+  .flyer-content-xl {
+    max-width: $flyer-inner-xl;
+  }
+
+}

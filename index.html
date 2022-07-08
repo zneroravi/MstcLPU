@@ -1,444 +1,709 @@
-<!DOCTYPE html>
-<html class="no-js">
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
 
-<head>
+    <!-- Title -->
+    <title>MSTC LPU</title>
+
+    <!-- Required Meta Tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Microsoft Technical Community LPU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <meta name="description" content="We are microsoft technical Community and we thrive to make LPU, a tech enabled Campus. By the
-support of Microsoft at back , and your good wishes we wish to energize today's youth to be in the frontier of Technology and Developement." />
-    <meta name="keywords" content="microsoft, microsoft student partner, MSP, microsoft technical community, MSTC, MSP-LPU" />
-    <meta name="author" content="Rohit Swami" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
 
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/vegas/vegas.min.css">
+    <link rel="stylesheet" href="assets/vendor/featherlight/featherlight.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/featherlight/featherlight.gallery.min.css" type="text/css">
 
-    <!--PWA Code-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/pwa/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/pwa/android-icon-192x192.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#566a8f">
-    <meta name="msapplication-TileImage" content="images/pwa/ms-icon-144x144.png">
-    <meta name="theme-color" content="#566a8f">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Simple Line Icons -->
-    <link rel="stylesheet" href="css/simple-line-icons.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Loader -->
+    <div class="loader bg-dark">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
 
+    <!-- Navbar -->
+    <nav id="siteNavbar" class="site-navbar site-navbar-alternative navbar navbar-expand-lg align-items-start navbar-light fixed-top py-xl-4">
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+      <a class="navbar-brand mb-2 mb-lg-0 px-3 py-2 bg-white rounded shadow-light scrollto" href="#intro">
+        <!-- <img src="assets/images/logo-white.png" alt="" class="navbar-brand-img navbar-brand-img-light">
+        <img src="assets/images/logo-dark.png" alt="" class="navbar-brand-img navbar-brand-img-dark"> -->
+        Microsoft Student Technical Community LPU
+      </a>
 
-    <!-- Recaptcha JS -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+      <button class="navbar-toggler-alternative mb-2 mb-lg-0 p-2 bg-white rounded shadow-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-alternative-icon">
+          <span></span>
+        </span>
+      </button>
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106313500-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+      <div class="navbar-collapse collapse bg-white rounded shadow-light" id="navbarCollapse">
+        <div class="navbar-collapse-inner p-2 py-lg-1 pl-lg-2 pr-lg-1">
 
-        function gtag() {
-            dataLayer.push(arguments)
-        };
-        gtag('js', new Date());
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
 
-        gtag('config', 'UA-106313500-1');
-    </script>
-    <script type="text/javascript" data-cfasync="false" src="//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js" data-shr-siteid="8972e53157d800c8454cbe7c0a293687" async="async"></script>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScDw3NCjw-N1HrbjLzRDNkfDk0hzqL_CkyfYAW9YACLQgS5zg/viewform" target="_blank" class="btn btn-primary d-block d-lg-inline-block ml-lg-1">Join Team</a></a>
 
-</head>
-
-<body>
-    <header role="banner" id="fh5co-header">
-        <div class="container">
-            <!-- <div class="row"> -->
-            <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <!-- Mobile Toggle Menu Button -->
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <a href="http://www.microsoftlpu.com"><img src="images/logo.png" width="160" height="60"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-                        <li><a href="#" data-nav-section="about"><span>About</span></a></li>
-                        <li><a href="training/index.html" onclick="training()"><span>Training</span></a></li>
-                        <li><a href="#" data-nav-section="gallery"><span>Gallery</span></a></li>
-                        <li><a href="#" data-nav-section="event"><span>Upcoming Event</span></a></li>
-                        <li><a href="team.html" onclick="team()"><span>Team</span></a></li>
-                        <li><a href="#" data-nav-section="contact"><span>Contact Us</span></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- </div> -->
         </div>
-    </header>
+      </div>
+    </nav>
 
-    <section id="particles-js" data-section="home" data-stellar-background-ratio="0.5" style="background-image: url(images/home-bg.jpg);">
-        <div class="container">
+    <!-- Button - Close flyer -->
+    <a href="#intro" class="btn-close-flyer scrollto btn btn-icon btn-white shadow-light mr-4" tabindex="-1">
+      <i class="fas fa-times btn-icon-inner"></i>
+    </a>
+
+    <!-- Button - Back to top -->
+    <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-white shadow-light mb-4 mr-4" tabindex="-1">
+      <i class="fas fa-chevron-up btn-icon-inner"></i>
+    </a>
+
+    <!-- Intro Content -->
+    <div id="intro" class="intro-content">
+
+      <!-- Overlay -->
+      <div class="overlay overlay-advanced overlay-intro">
+        <div class="overlay-inner bg-cover bg-image-holder">
+          <img src="assets/images/photos/photo-6.jpg" alt="background">
         </div>
-        <div class="slant"></div>
-    </section>
-
-    <section id="fh5co-about" data-section="about">
-        <div class="container">
-            <div class="row to-animate">
-                <div class="fh5co-person">
-                    <div class="col-md-5">
-                        <div class="text-center to-animate">
-                            <img src="images/mstc.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="space"></div>
-                    <div class="col-md-7">
-                        <div class="text-center to-animate">
-                            <h3>About MSTC</h3>
-                            <span class="fh5co-position">Microsoft Technical Community</span>
-                            <p>The Microsoft Technical Communities (MSTC) program helps community leaders worldwide get connected with the content, speakers, and sponsorship they need to help lead successful user groups! MSTC LPU is the Microsoft Technical
-                                Community of Lovely Professional University, who work to deliver technical content across Punjab. We host community events to guide professionals in different technologies. With MSTC, we are trying to create a platform
-                                where like-minded individuals come together to share and learn about technology.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row to-animate">
-                <div class="fh5co-person">
-                    <div class="col-md-7">
-                        <div class="text-center to-animate">
-                            <h3>About MSP</h3>
-                            <span class="fh5co-position">Microsoft Student Partner</span>
-                            <p>The Microsoft Student Partners is a worldwide recognizable program to sponsor undergraduate and postgraduate students majoring in disciplines related to technology, typically computer science, computer information systems,
-                                and information technology. MSP program aims to enhance students' employability and increase students' awareness of Microsoft technologies. Student Partners are given access to the latest Microsoft software, development
-                                tools, reference material, industry events, and training opportunities. MSPs further share the knowledge among the academic community by arranging courses; giving presentations and lectures; and initiating projects among
-                                the students. Student Partners are offered training especially in product-specific skills not typically taught in academia. The program aims to increase awareness of Microsoft products, programs and initiatives. Consequently,
-                                the program helps expanding the user base of Microsoft products, and results in better availability of properly educated workforce in those technologies.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="text-center to-animate">
-                            <img src="images/MSP.png" alt="Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="overlay-inner d-flex">
+          <div class="skew-left bg-black opacity-80"></div>
+          <div class="skew-right d-none d-xl-block bg-black opacity-20"></div>
         </div>
-    </section>
+      </div>
 
-    <section id="fh5co-work" data-section="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Gallery</h2>
-                </div>
+      <div class="intro-content-inner inner-left min-vh-100 d-flex align-items-center py-9 py-lg-12">
+        <div class="container ml-xl-0 pl-xl-10">
+          <div class="row">
+            <div class="col-12 col-lg-9 col-xl-9 mx-auto ml-xl-0 text-center text-xl-left text-white">
+
+              <h1 class="display-4 mb-4">Full Website coming soon</h1>
+              <p class="lead mb-7">MSTC LPU is the Microsoft Technical Community of Lovely Professional University, who work to deliver technical content across Punjab. We host community events to guide professionals in different technologies. With MSTC, we are trying to create a platform where like-minded individuals come together to share and learn about technology.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScDw3NCjw-N1HrbjLzRDNkfDk0hzqL_CkyfYAW9YACLQgS5zg/viewform" class="btn btn-white mr-3">Join Us</a>
+              
+
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <a href="imagine-talk.html" class="fh5co-project-item to-animate">
-                        <img src="images/1.jpg" alt="Image" class="img-responsive">
-                    </a>
-                    <div class="section-heading text-center to-animate">
-                        <h3>Imagine Talks 1.0</h3>
-                    </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <ul class="list-inline position-absolute bottom-0 left-0 mb-4 mb-lg-5 ml-4 ml-lg-5">
+
+        <li class="list-inline-item mx-0">
+          <a class="btn btn-sm btn-icon btn-soft-white" href="#!" tabindex="0">
+            <i class="fab fa-facebook-f btn-icon-inner"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item mx-0">
+          <a class="btn btn-sm btn-icon btn-soft-white" href="#!" tabindex="0">
+            <i class="fab fa-twitter btn-icon-inner"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item mx-0">
+          <a class="btn btn-sm btn-icon btn-soft-white" href="#!" tabindex="0">
+            <i class="fab fa-linkedin-in btn-icon-inner"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item mx-0">
+          <a class="btn btn-sm btn-icon btn-soft-white" href="#!" tabindex="0">
+            <i class="fab fa-dribbble btn-icon-inner"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- Flyer Backdrop -->
+    <div class="flyer-backdrop">
+      <div class="overlay overlay-advanced">
+        <div class="overlay-inner bg-dark opacity-80"></div>
+        <div class="overlay-inner bg-gradient-v-transparent-dark"></div>
+      </div>
+    </div>
+
+    <!-- Flyer -->
+    <div class="flyer">
+      <div class="flyer-inner">
+        <div class="flyer-content flyer-content-lg shadow-dark-lg">
+
+          <!-- About Section -->
+          <section id="about" class="py-9 py-lg-12">
+            <div class="container px-xl-10">
+              <div class="row mb-8">
+                <div class="col-lg-10 mx-auto text-center">
+                  <h2>Less work, more flow.</h2>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <a href="github-workshop.html" class="fh5co-project-item to-animate">
-                        <img src="images-2/003.jpg" alt="Image" class="img-responsive">
-                    </a>
-                    <div class="section-heading text-center to-animate">
-                        <h3>Git &amp; Github Session</h3>
-                    </div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-6 mb-7">
+                  <div class="icon icon-boxed icon-4x rounded bg-soft-primary text-primary mb-4">
+                    <i class="ti-book"></i>
+                  </div>
+                  <h5>Well Documented</h5>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
                 </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <a href="mshacks.html" class="fh5co-project-item to-animate">
-                            <img src="images/mshacks/4.webp" alt="Image" class="img-responsive">
-                        </a>
-                        <div class="section-heading text-center to-animate">
-                            <h3>Microsoft Hackathon 1.0</h3>
+
+                <div class="col-md-6 mb-7">
+                  <div class="icon icon-boxed icon-4x rounded bg-soft-secondary text-secondary mb-4">
+                    <i class="ti-bolt-alt"></i>
+                  </div>
+                  <h5>Fast & Easy</h5>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div>
+
+                <div class="col-md-6 mb-7 mb-md-0">
+                  <div class="icon icon-boxed icon-4x rounded bg-soft-danger text-danger mb-4">
+                    <i class="ti-ruler-pencil"></i>
+                  </div>
+                  <h5>Fully Customizable</h5>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon icon-boxed icon-4x rounded bg-soft-success text-success mb-4">
+                    <i class="ti-split-h"></i>
+                  </div>
+                  <h5>Responsive Layout</h5>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- Image -->
+          <img src="assets/images/photos/photo-5.jpg" alt="" class="img-fluid">
+
+          <!-- Pricing Section -->
+          <section id="pricing" class="pt-9 pt-lg-12 pb-0 bg-primary">
+            <div class="container px-xl-10">
+              <div class="row mb-8">
+                <div class="col-lg-10 mx-auto text-white text-center">
+                  <h2>Scales with your business</h2>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div>
+              </div>
+              <div class="row mb-n9 mb-lg-n12">
+
+                <div class="col-md-6 mb-7 mb-md-0">
+                  <div class="card shadow-light">
+                    <div class="card-body align-items-center p-7">
+                      <div class="text-center mb-7">
+                        <h4>Basic</h4>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                          <span class="h5 mb-0 mr-2">$</span>
+                          <span class="display-3 mb-0">19</span>
                         </div>
+                        <div class="text-muted">Per user, per month</div>
+                      </div>
+                      <ul class="list-unstyled p-0">
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">2 TB Cloud Storage</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Integrated desktop experience</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Anytime, anywhere access</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Easy and secure sharing</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-secondary text-secondary">
+                              <i class="fas fa-times"></i>
+                            </div>
+                            <p class="mb-0 ml-3 text-muted">Admin console</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-secondary text-secondary">
+                              <i class="fas fa-times"></i>
+                            </div>
+                            <p class="mb-0 ml-3 text-muted">Live chat support</p>
+                          </div>
+                        </li>
+
+                      </ul>
+                      <a href="#" class="btn btn-block btn-outline-primary mt-7">Start with Basic</a>
                     </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <a href="imagine-camp-gallery.html" class="fh5co-project-item to-animate">
-                            <img src="images/imagine_camp/1.jpg" alt="Image" class="img-responsive">
-                        </a>
-                        <div class="section-heading text-center to-animate">
-                            <h3>Imagine Camp</h3>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card shadow-light border-primary">
+                    <div class="card-body align-items-center p-7">
+                      <div class="text-center mb-7">
+                        <h4>Premium</h4>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                          <span class="h5 mb-0 mr-2">$</span>
+                          <span class="display-3 mb-0">39</span>
                         </div>
+                        <div class="text-muted">Per user, per month</div>
+                      </div>
+                      <ul class="list-unstyled p-0">
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">10 TB Cloud Storage</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Integrated desktop experience</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Anytime, anywhere access</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Easy and secure sharing</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Admin console</p>
+                          </div>
+                        </li>
+
+                        <li class="my-3">
+                          <div class="d-flex align-items-center">
+                            <div class="icon icon-boxed icon-2x rounded bg-soft-success text-success">
+                              <i class="fas fa-check"></i>
+                            </div>
+                            <p class="mb-0 ml-3">Live chat support</p>
+                          </div>
+                        </li>
+
+                      </ul>
+                      <a href="#" class="btn btn-block btn-primary mt-7">Start with Premium</a>
                     </div>
+                  </div>
                 </div>
-                  <div class="row">
-                <div class="col-md-3 col-md-offset-2 col-sm-12 col-xs-12">
-                    <a href="hack-a-day.html" class="fh5co-project-item to-animate">
-                        <img src="images/hack-a-day/0.jpg" alt="Image" class="img-responsive">
-                    </a>
-                    <div class="section-heading text-center to-animate">
-                        <h3>Hack-A-Day</h3>
-                    </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- Portfolio Section -->
+          <section id="portfolio" class="pt-9 pt-lg-12 pb-0 bg-white">
+            <div class="container pt-9 pt-lg-12 px-xl-10">
+              <div class="row mb-8">
+                <div class="col-lg-10 mx-auto text-center">
+                  <h2>Portfolio</h2>
+                  <p class="mb-0">Trust the professionals</p>
                 </div>
-                <div class="col-md-3 col-md-offset-2 col-sm-12 col-xs-12">
-                    <a href="azure.html" class="fh5co-project-item to-animate">
-                        <img src="images/azure/0.JPG" alt="Image" class="img-responsive">
-                    </a>
-                    <div class="section-heading text-center to-animate">
-                        <h3>Microsoft Azure Bootcamp</h3>
+              </div>
+              <div class="row mx-n4">
+
+                <div class="col-md-6 px-4 mb-6">
+                  <a class="card border-0 hover-parent" href="assets/images/portfolio/portfolio-1.jpg" data-featherlight="image" data-title="Cliff" data-text="Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.">
+                    <div class="card-zoom">
+                      <img class="card-img" src="assets/images/portfolio/portfolio-1.jpg" alr="">
                     </div>
+                    <div class="card-body pb-0 px-0">
+                      <p class="small text-uppercase mb-1 text-muted">Branding</p>
+                      <h4 class="h5 text-dark mb-0">Cliff</h4>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6 px-4 mb-6" data-featherlight-gallery data-featherlight-filter="a">
+                  <a class="card border-0 hover-parent" href="assets/images/portfolio/portfolio-2.jpg" data-title="Tropical beach" data-text="1. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.">
+                    <div class="card-zoom">
+                      <img class="card-img" src="assets/images/portfolio/portfolio-2.jpg" alr="">
+                    </div>
+                    <div class="card-body pb-0 px-0">
+                      <p class="small text-uppercase mb-1 text-muted">Branding</p>
+                      <h4 class="h5 text-dark mb-0">Tropical beach</h4>
+                    </div>
+                  </a>
+                  <a class="d-none" href="assets/images/photos/photo-1.jpg" data-title="Mountains" data-text="2. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris."></a>
+                  <a class="d-none" href="assets/images/photos/photo-2.jpg" data-title="Waves" data-text="3. Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris."></a>
+                </div>
+
+                <div class="col-md-6 px-4 mb-6 mb-md-0">
+                  <a class="card border-0 hover-parent" href="https://www.youtube.com/embed/Gm7FX3WMk3c" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="1200" data-featherlight-iframe-height="675" data-title="Small islands" data-text="Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.">
+                    <div class="card-zoom">
+                      <img class="card-img" src="assets/images/portfolio/portfolio-3.jpg" alr="">
+                    </div>
+                    <div class="card-body pb-0 px-0">
+                      <p class="small text-uppercase mb-1 text-muted">Branding</p>
+                      <h4 class="h5 text-dark mb-0">Small islands</h4>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6 px-4">
+                  <a class="card border-0 hover-parent" href="assets/images/portfolio/portfolio-4.jpg" data-featherlight="image" data-title="Long river" data-text="Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris.">
+                    <div class="card-zoom">
+                      <img class="card-img" src="assets/images/portfolio/portfolio-4.jpg" alr="">
+                    </div>
+                    <div class="card-body pb-0 px-0">
+                      <p class="small text-uppercase mb-1 text-muted">Branding</p>
+                      <h4 class="h5 text-dark mb-0">Long river</h4>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ Section -->
+          <section class="py-9 py-lg-12">
+            <div class="container px-xl-10">
+              <div class="row mb-8">
+                <div class="col-lg-10 mx-auto text-center">
+                  <h2>FAQ</h2>
+                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                </div>
+              </div>
+              <div id="accordionBaseExample" class="accordion-separated">
+
+                <div class="card mb-3">
+                  <div class="card-header card-collapse" id="headingBaseOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block d-flex justify-content-between card-btn px-5 py-3" type="button" data-toggle="collapse" data-target="#collapseBaseOne" aria-expanded="true" aria-controls="collapseBaseOne">
+                        Can I upgrade later on?
+                        <span class="card-btn-arrow">
+                          <i class="fas fa-angle-up"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseBaseOne" class="collapse show" aria-labelledby="headingBaseOne" data-parent="#accordionBaseExample">
+                    <div class="card-body p-5">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-header card-collapse" id="headingBaseTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block d-flex justify-content-between card-btn px-5 py-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseBaseTwo" aria-expanded="false" aria-controls="collapseBaseTwo">
+                        Can I port my data from another provider?
+                        <span class="card-btn-arrow">
+                          <i class="fas fa-angle-up"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseBaseTwo" class="collapse" aria-labelledby="headingBaseTwo" data-parent="#accordionBaseExample">
+                    <div class="card-body p-5">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-header card-collapse" id="headingBaseThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block d-flex justify-content-between card-btn px-5 py-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseBaseThree" aria-expanded="false" aria-controls="collapseBaseThree">
+                        What's the real cost?
+                        <span class="card-btn-arrow">
+                          <i class="fas fa-angle-up"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseBaseThree" class="collapse" aria-labelledby="headingBaseThree" data-parent="#accordionBaseExample">
+                    <div class="card-body p-5">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header card-collapse" id="headingBaseFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block d-flex justify-content-between card-btn px-5 py-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseBaseFour" aria-expanded="false" aria-controls="collapseBaseFour">
+                        Can my company request a custom plan?
+                        <span class="card-btn-arrow">
+                          <i class="fas fa-angle-up"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseBaseFour" class="collapse" aria-labelledby="headingBaseFour" data-parent="#accordionBaseExample">
+                    <div class="card-body p-5">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section id="contact" class="py-9 py-lg-12 bg-light">
+            <div class="container px-xl-10">
+              <div class="row mb-8">
+                <div class="col-lg-10 mx-auto text-center">
+                  <h2>Contact Us</h2>
+                  <p class="mb-0">Want to say hello? Want to know more about us? Give us a call or drop us an email and we will get back to you as soon as we can.</p>
+                </div>
+              </div>
+              <div class="row mb-5">
+
+                <div class="col-md-4 mb-5 mb-md-0">
+                  <div class="icon icon-boxed icon-4x rounded bg-white text-primary shadow-light mb-4">
+                    <i class="ti-mobile"></i>
+                  </div>
+                  <p class="fs-14">(0091) 1111 1234567<br/>
+                  (084) 2222 1234567</p>
+                </div>
+
+                <div class="col-md-4 mb-5 mb-md-0">
+                  <div class="icon icon-boxed icon-4x rounded bg-white text-primary shadow-light mb-4">
+                    <i class="ti-location-pin"></i>
+                  </div>
+                  <p class="fs-14">69 Halsey St, New York, Ny 10002,<br/>
+                  United States</p>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="icon icon-boxed icon-4x rounded bg-white text-primary shadow-light mb-4">
+                    <i class="ti-email"></i>
+                  </div>
+                  <p class="fs-14">
+                    <a href="mailto:support@example.com" class="text-dark">support@example.com</a><br/>
+                    <a href="mailto:hello@example.com" class="text-dark">hello@example.com</a>
+                  </p>
+                </div>
+
+              </div>
+              <div class="contact-form">
+                <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
+                  <div class="form-row">
+
+                    <div class="form-process"></div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" id="cf-name" name="cf-name" placeholder="Enter your name" class="form-control required">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" id="cf-email" name="cf-email" placeholder="Enter your email address" class="form-control required">
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-group">
+                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject (Optional)" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                      <div class="form-group">
+                        <textarea name="cf-message" id="cf-message" placeholder="Message" class="form-control required" rows="7"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-12 d-none">
+                      <input type="text" id="cf-botcheck" name="cf-botcheck" value="" class="form-control" />
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <button class="btn btn-primary" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
+                    </div>
+
+                    <input type="hidden" name="prefix" value="cf-">
+
+                  </div>
+                </form>
+                <div class="contact-form-result text-center"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="site-footer py-9 py-lg-12 bg-dark text-gray-500">
+            <div class="container px-xl-10">
+              <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                  <img src="assets/images/logo-white.png" alt="" class="h--8 w-auto mb-5">
+                  <p class="text-gray-400 mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                  <ul class="list-inline mb-8">
+
+                    <li class="list-inline-item mx-0">
+                      <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <i class="fab fa-facebook-f btn-icon-inner"></i>
+                      </a>
+                    </li>
+
+                    <li class="list-inline-item mx-0">
+                      <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <i class="fab fa-twitter btn-icon-inner"></i>
+                      </a>
+                    </li>
+
+                    <li class="list-inline-item mx-0">
+                      <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <i class="fab fa-linkedin-in btn-icon-inner"></i>
+                      </a>
+                    </li>
+
+                    <li class="list-inline-item mx-0">
+                      <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <i class="fab fa-dribbble btn-icon-inner"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+                  <p class="mb-0">© 2020 Landberg - All Rights Reserved - <a href="#!" class="text-gray-400">Privacy Policy</a></p>
                 </div>
               </div>
             </div>
-        </section>
-
-    <section id="fh5co-testimonials" class="event" data-section="event">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center to-animate">
-                    <h2 class="to-animate">Upcoming Events</h2>
-                </div>
-            </div>
-            <div class="row topics">
-                <div class="col-md-12 section-heading text-center to-animate">
-                   <h2 class="to-animate">Microsoft Hackathon 2.0</h2>
-                </div>
-            </div>
-            <div class="row space">
-                <div class="col-md-4 col-sm-12 col-xs-12 space">
-                    <div class="row">
-                        <div class="col-md-2 to-animate">
-                            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-10 to-animate">
-                            <h2>Date &amp; Time</h2>
-                            <div><span>Saturday, 25th August 2018</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 space">
-                    <div class="row">
-                        <div class="col-md-2 to-animate">
-                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-10 to-animate">
-                            <h2>Venue</h2>
-                            <div>SSDM Auditorium,</div>
-                            <span>Lovely Professional University</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 space">
-                    <div class="row">
-                        <div class="col-md-2 to-animate">
-                            <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-10 to-animate">
-                            <h2>Time</h2>
-                            <span>11AM Onwards</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="row register">
-                <div class="col-md-12 col-lg-12 text-center">
-                <a href="http://www.microsoftlpu.com/Imagine_cup.html"><button>See More</button></a>
-                    </div>
-            </div> -->
-            <!-- <div class="row">
-                <ul class="list-unstyled list-inline to-animate">
-                    <li class="col-md-12 col-xs-12 "><i class="fa fa-arrow-circle-right " aria-hidden="true "></i>&nbsp;&nbsp;Version Control with Git &amp; Github (Advanced)</li>
-                </ul>
-			</div> -->
+          </footer>
 
         </div>
-    </section>
+      </div>
+    </div>
 
+    <!-- Subscribe Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeNewsletter" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content hover-parent">
 
-    <section id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
-        <div class="fh5co-overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center to-animate">
-                    <h2>Fun Facts</h2>
-                </div>
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+            <i class="fas fa-times btn-icon-inner"></i>
+          </button>
+
+          <!-- Overlay -->
+          <div class="overlay overlay-advanced">
+            <div class="overlay-inner bg-image-holder bg-cover">
+              <img src="assets/images/photos/photo-3.jpg" alr="">
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fh5co-counter to-animate">
-                        <i class="fh5co-counter-icon icon-code to-animate-2"></i>
-                        <span class="fh5co-counter-number js-counter" data-from="0" data-to="25363" data-speed="5000" data-refresh-interval="50">25,363</span>
-                        <span class="fh5co-counter-label">Lines of code</span>
-                    </div>
+            <div class="overlay-inner bg-primary opacity-70 hover-opacity-80"></div>
+            <div class="overlay-inner bg-gradient-v-transparent-dark opacity-90 hover-opacity-80"></div>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-white text-center">
+
+            <h2 id="subscribeNewsletter" class="mb-4">Subscribe<br/> to our newsletter</h2>
+            <p class="mb-10">Signup for our weekly newsletter to get the latest news, updates and amazing offers delivered directly in your inbox.</p>
+            <div class="subscribe-form">
+              <form id="sf" name="sf" action="include/subscribe.php" method="post">
+                <div class="form-process"></div>
+                <div class="form-group">
+                  <input type="email" id="sf-email" name="sf-email" placeholder="Enter Your Email Address" class="form-control required">
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fh5co-counter to-animate">
-                        <i class="fh5co-counter-icon icon-energy  to-animate-2"></i>
-                        <span class="fh5co-counter-number js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50">5</span>
-                        <span class="fh5co-counter-label">Event</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fh5co-counter to-animate">
-                        <i class="fh5co-counter-icon icon-rocket to-animate-2"></i>
-                        <span class="fh5co-counter-number js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50">6</span>
-                        <span class="fh5co-counter-label">Technologies Covered</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="fh5co-counter to-animate">
-                        <i class="fh5co-counter-icon icon-people to-animate-2"></i>
-                        <span class="fh5co-counter-number js-counter" data-from="0" data-to="7500" data-speed="5000" data-refresh-interval="50">7500+</span>
-                        <span class="fh5co-counter-label">Attendees</span>
-                    </div>
-                </div>
+                <input type="text" id="sf-botcheck" name="sf-botcheck" value="" class="form-control d-none">
+                <button class="btn btn-soft-white btn-block" type="submit" id="sf-submit" name="sf-submit">Notify Me</button>
+              </form>
+              <div class="subscribe-form-result"></div>
             </div>
+
+          </div>
+
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="fh5co-contact" data-section="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Get In Touch</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-bottom-padded-md">
-                <div class="col-md-6 to-animate">
-                    <h3>Contact Info</h3>
-                    <ul class="fh5co-contact-info">
-                        <li class="fh5co-contact-address ">
-                            <i class="icon-home"></i> Lovely Professional University, <br>Phagwara, Punjab, IN
-                        </li>
-                        <li><i class="icon-phone"></i> +91-8059459498</li>
-                        <li><i class="icon-envelope"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1a8afa7ae81aca8a2b3aeb2aea7b5adb1b4efa2aeac">info@microsoftlpu.com</a></li>
-                        <li><i class="icon-globe"></i> <a href="http://www.microsoftlpu.com/" target="_blank">www.microsoftlpu.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 to-animate">
-                    <h3>Contact Form</h3>
-                    <form action="https://www.enformed.io/qnikj6yq" method="POST">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input name="first_name" type="text" class="form-control" required>
-                        </div>
+    <!-- Libs JS -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+    <script src="assets/vendor/featherlight/featherlight.min.js"></script>
+    <script src="assets/vendor/featherlight/featherlight.gallery.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/vegas/vegas.min.js"></script>
+    <script src="assets/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input name="e_mail" type="text" class="form-control" required>
-                        </div>
+    <!-- Theme JS -->
+    <script src="assets/js/main.js"></script>
 
-                        <div class="form-group">
-                            <label>Mobile No.</label>
-                            <input name="mobile" type="number" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Your message</label>
-                            <textarea name="message" type="text" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="g-recaptcha btn btn-default" data-sitekey="6LeHlDcUAAAAAOgMsoxmDZcSFmwAVyRYhqDoHPoU" data-callback="YourOnSubmitFn">
-                        Submit
-                        </button>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <div id="map" class="to-animate"></div>
-    </section>
-
-
-
-    <footer id="footer" role="contentinfo">
-        <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-        <div class="container">
-            <div class="">
-                <div class="col-md-12 text-center">
-                    <p><a href="http://www.microsoftlpu.com"> www.microsoftlpu.com</a> <br>&copy; All Rights Reserved. <br>Created by <a href="https://www.linkedin.com/company/13422709/">Microsoft Technical Community, LPU</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <ul class="social social-circle">
-                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/microsoftlpu"><i class="icon-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/mstclpu/"><i class="icon-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js "></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js "></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js "></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js "></script>
-    <!-- Stellar Parallax -->
-    <script src="js/jquery.stellar.min.js "></script>
-    <!-- Counter -->
-    <script src="js/jquery.countTo.js "></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js "></script>
-    <script src="js/magnific-popup-options.js "></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNuHy89eyPeeFK_fXVKIV7wzavokkUqmA&callback=initMap " async defer></script>
-    <script src="js/google_map.js "></script>
-
-    <!-- Particles.js -->
-    <script src="js/particles.js "></script>
-    <script src="js/app.js "></script>
-
-
-    <script src="https://use.fontawesome.com/ec9198a6e3.js "></script>
-
-    <!-- Main JS (Do not remove) -->
-    <script src="js/main.js "></script>
-
-    <script type="text/javascript">
-        //This is the "Offline copy of pages" service worker
-
-        //Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-        if (navigator.serviceWorker.controller) {
-            console.log('[PWA Builder] active service worker found, no need to register')
-        } else {
-            //Register the ServiceWorker
-            navigator.serviceWorker.register('pwabuilder-sw.js', {
-                scope: './'
-            }).then(function(reg) {
-                console.log('Service worker has been registered for scope:' + reg.scope);
-            });
-        }
-    </script>
-
-</body>
-
+  </body>
 </html>
